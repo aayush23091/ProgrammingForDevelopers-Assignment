@@ -1,3 +1,48 @@
+// Imagine a puzzle where words represent numbers, and we need to find a unique digit mapping for
+// each letter to satisfy a given equation. The rule is that no two letters can have the same digit, and
+// numbers must not have leading zeros.
+// Scenario 1: True Case (Valid Equation)
+// Equation:
+// "STAR" + "MOON" = "NIGHT"
+// "STAR"+"MOON"="NIGHT"
+// Step 1: Assign Unique Digits to Letters
+// S = 8
+// T = 4
+// A = 2
+// R = 5
+// M = 7
+// O = 1
+// N = 9
+// I = 6
+// G = 3
+// H = 0
+// Step 2: Convert Words into Numbers
+// "STAR" → 8425
+// "MOON" → 7119
+// "NIGHT" → 96350
+// Step 3: Verify the Sum
+// 8425 + 7119 = 15544
+// Equation: "CODE" + "BUG" = "DEBUG"
+// "CODE"+"BUG"="DEBUG"
+// Now, let's try to assign unique digits.
+// Step 1: Assign Unique Digits to Letters
+// C = 1
+// O = 0
+// D = 5
+// E = 7
+// B = 3
+// U = 9
+// G = 2
+// Step 2: Convert Words into Numbers
+// "CODE" → 1057
+// "BUG" → 392
+// "DEBUG" → 57392
+// Step 3: Verify the Sum
+// 1057+392=1449
+// Since 1449 ≠ 57392, this mapping is invalid, and no possible digit assignment satisfies the equation.
+
+
+
 package Question2;
 import java.util.*;
 
