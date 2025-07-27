@@ -1,3 +1,4 @@
+package Question3;
 public class Question3a {
 
     public static int maxRepetitions(String p1, int t1, String p2, int t2) {

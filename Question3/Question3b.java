@@ -1,3 +1,4 @@
+package Question3;
 public class Question3b {
 
     public static int maxMagicalPower(String M) {
