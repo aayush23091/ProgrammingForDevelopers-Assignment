@@ -1,3 +1,51 @@
+// Online Ticket Booking System – Concurrency Control
+// Functionality:
+//  Locks (Mutex / Semaphore): Ensure multiple users don’t book the same seat simultaneously.
+//  Queue (Booking Requests): Manage pending seat reservation requests.
+//  Database (Shared Resource): Store and update seat availability status concurrently.
+// GUI:
+//  A seating chart displaying available and booked seats.
+//  A queue showing pending booking requests.
+//  Buttons to:
+// o Book a Seat (Simulate multiple users trying to book seats).
+// o Enable Concurrency Control (Optimistic or Pessimistic Locking).
+// o Process Bookings (Execute transactions concurrently).
+// Implementation:
+// Initialization:
+// 1. Generate a seating layout for a theater/train/flight with available seats.
+// 2. Create a queue of booking requests from multiple users.
+// 3. Allow the user to choose a concurrency control mechanism (optimistic or pessimistic locking).
+// 4. Display the seat availability in the GUI.
+// Booking Process:
+// 1. Choose a Concurrency Control Mechanism:
+// o Optimistic Locking:
+//  Read seat availability → Attempt to book → Check if status changed →
+// Commit or retry.
+// o Pessimistic Locking:
+//  Lock the seat → Process booking → Unlock after completion.
+// 2. Process Booking Requests:
+// o Fetch a request from the queue.
+// o Apply the chosen concurrency mechanism.
+// o Update the seat status safely.
+// 3. Real-time GUI Updates:
+// o Show updated seat availability.
+// o Handle failures if a seat is already booked.
+// Booking Completion:
+//  If a seat is successfully booked, confirm the booking.
+//  If a conflict arises, retry or notify the user.
+// Data Structures:
+//  Queue: Store pending booking requests before processing.
+//  HashMap / Dictionary: Maintain seat availability status.
+//  Mutex / Semaphore: Prevent race conditions during seat selection.
+//  Thread Pool: Simulate multiple users booking seats concurrently.
+// Additional Considerations:
+//  Deadlock Prevention: Handle timeout or avoid circular waits.
+//  Transaction Logging: Keep a record of successful and failed bookings.
+//  Performance Monitoring: Display success rate, conflicts, and retries.
+//  Refund and Cancellation Handling: Allow users to cancel bookings and free up seats.
+
+
+
 package Question5;
 import javax.swing.*;
 import java.awt.*;
