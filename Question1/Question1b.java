@@ -1,3 +1,4 @@
+package Question1;
 public class Question1b {
 
     public static int strongPINChanges(String pin_code) {
