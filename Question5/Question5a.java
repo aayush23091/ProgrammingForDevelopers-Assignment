@@ -1,3 +1,46 @@
+// A Maze Solver
+// Functionality:
+//  Graph (Adjacency List/Matrix): Use a graph to represent the maze where each cell is a node
+// connected to its adjacent cells.
+//  Stack (DFS) / Queue (BFS): Use a stack for Depth-First Search (DFS) or a queue for Breadth-First
+// Search (BFS) to find a path from start to finish.
+// GUI:
+//  A grid-based maze where each cell is a node.
+//  A start and end point for the player or algorithm.
+//  Buttons to solve the maze using DFS or BFS.
+//  A "Generate New Maze" button to create a randomized maze.
+// Implementation:
+// Initialization:
+// 1. Generate a random maze using a grid where walls block movement.
+// 2. Represent the maze as a graph (adjacency list or matrix).
+// 3. Allow the user to choose a start and end point.
+// 4. Display the maze in the GUI.
+// Solving the Maze:
+// While the path is not found:
+// 1. Choose an algorithm:
+// o If DFS is selected, use a stack.
+// o If BFS is selected, use a queue.
+// 2. Explore adjacent nodes:
+// o If a path is found, mark it.
+// o If a dead-end is reached, backtrack.
+// 3. Highlight the solution path on the GUI.
+// Game Over:
+//  If the end point is reached, display a success message.
+//  If no path exists, display a failure message.
+// Data Structures:
+//  Graph: Represent the maze where each cell is a node connected to adjacent walkable cells.
+//  Queue: Used for BFS to find the shortest path.
+//  Stack: Used for DFS to explore paths.
+//  2D Array: Represents the grid-based maze.
+// Additional Considerations:
+//  Random Maze Generation: Use algorithms like Prim’s or Recursive Backtracking to generate
+// new mazes dynamically.
+//  User Input: Allow the player to manually navigate through the maze.
+//  Path Animation: Visually show the algorithm exploring paths.
+//  Scoring System: Award points based on efficiency (steps taken, time, etc.).
+
+
+
 package Question5;
 import javax.swing.*;
 import java.awt.*;
