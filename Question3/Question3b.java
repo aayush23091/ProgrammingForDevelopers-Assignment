@@ -1,3 +1,34 @@
+// In a mystical world, powerful magical words exist. A magical word is a sequence of letters that reads
+// the same forward and backward and always has an odd number of letters.
+// A sorcerer has a long ancient manuscript represented as a string M. The sorcerer wants to extract two
+// non-overlapping magical words from M in order to maximize their power combination.
+// The power of a magical word is equal to its length, and the total power is the product of the lengths of
+// the two chosen magical words.
+// Task
+// Given the manuscript M, determine the maximum possible power combination that can be achieved
+// by selecting two non-overlapping magical words.
+// Example 1
+// Input:
+// M = "xyzyxabc"
+// Output:5
+// Explanation:
+// The magical word "xyzyx" (length 5) at [0:4]
+// The magical word "a" (length 1) at [5:5]
+// The product is 5 × 1 = 5
+// Even if we instead choose:
+// "xyzyx" (length 5)
+// "c" (length 1)
+// Max product = 5 × 1 = 5
+// So the best possible product is 5.
+// Example 2
+// Input: M = "levelwowracecar"
+// Output: 35
+// Explanation:
+// "level" (length 5)
+// "racecar" (length 7)
+// The product is 5 × 7 = 35.
+
+
 package Question3;
 public class Question3b {
 
