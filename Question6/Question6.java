@@ -1,3 +1,30 @@
+// Traffic Signal Management System (Multithreaded)
+// Functionality:
+//  Queue (FIFO Scheduling): Manage vehicles at a traffic signal.
+//  Priority Queue (Emergency Vehicles): Give priority to ambulances and fire trucks.
+//  Multithreading:
+// o Separate threads for traffic light changes, vehicle movement, and emergency
+// handling.
+// GUI:
+//  An animated traffic intersection.
+//  A queue showing waiting vehicles.
+//  Buttons to:
+// o Change Traffic Signal (Simulates signal changes in real-time).
+// o Add Vehicles (Continuously add vehicles with a thread).
+// o Enable Emergency Mode (Emergency vehicle gets priority in multithreaded execution).
+// Implementation:
+//  Main thread: Handles GUI and user inputs.
+//  Traffic light thread: Changes signals at fixed intervals.
+//  Vehicle queue thread: Processes vehicles using FIFO and priority queue logic.
+// Data Structures:
+//  Queue: Regular vehicle queue.
+//  Priority Queue: Emergency vehicle handling.
+// Multithreading Benefits:
+//  Vehicles move in real-time without blocking GUI updates.
+//  Traffic lights operate independently of vehicle movement.
+
+
+
 package Question6;
 import javax.swing.*;
 import java.awt.*;
