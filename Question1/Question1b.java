@@ -1,3 +1,37 @@
+// Scenario: Secure Bank PIN Policy Upgrade
+// A bank is implementing a new PIN security policy to strengthen customer account protection. Every
+// customer's banking PIN must meet the following criteria:
+// 1. The PIN must be between 6 and 20 characters (inclusive).
+// 2. It must contain at least one lowercase letter, one uppercase letter, and one digit.
+// 3. It must not contain three consecutive repeating characters (e.g., "AAA123" is weak, but
+// "AA123B" is strong).
+// The bank wants to ensure all PINs comply with these security rules.
+// Given a string pin_code, return the minimum number of changes required to make it strong. If the PIN
+// is already strong, return 0.
+// In one step, you can:
+//  Insert a character.
+//  Delete a character.
+//  Replace one character with another character.
+// Example 1:
+// Input: pin_code = "X1!"
+// Output: 3
+// Explanation:
+// Length is too short (3 characters, needs at least 6) → Insert 3 characters
+// Missing a lowercase letter → Insert "a"
+// Final strong PIN: "X1!abc"
+// Example 2:
+// Input: pin_code = "123456"
+// Output: 2
+// Explanation:
+// Missing an uppercase letter → Replace "1" with "A"
+// Missing a lowercase letter → Replace "2" with "b"
+// Final strong PIN: "Ab3456"
+// Example 3:
+// Input: pin_code = "Aa1234!"
+// Output: 0
+// Explanation: Already meets all criteria
+
+
 package Question1;
 public class Question1b {
 
